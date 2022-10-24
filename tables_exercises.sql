@@ -11,7 +11,7 @@ DESCRIBE employees;
 EXPLAIN departments;
 EXPLAIN employees;
 
-/* 9. Both departments and employees have a Primary Key. However, I was unable to discern which employee worked in what department. Was expecting the department code be part of the content in the employee tables. */
+/* 9. Both departments and employees have a Primary Key and VARCHAR. However, I was unable to discern which employee worked in what department. Was expecting the department code be part of the content in the employee tables. */
 
 SHOW CREATE TABLE dept_manager;
 
