@@ -1,2 +1,2 @@
 # database-exercises
-testing. ready to get this back on the terminal.
+Practice exercise for SQL.
