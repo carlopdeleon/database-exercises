@@ -1,3 +1,3 @@
 # database-exercises
 Practice exercises for SQL.
-Using VS CODE to practice in the SQL exercises.
+Using terminal and Sequel Ace to practice in the SQL exercises.
