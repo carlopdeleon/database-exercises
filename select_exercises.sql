@@ -34,7 +34,7 @@ Supernatural */
 SELECT name FROM albums
 	WHERE sales < 20;
 /* 4e.Grease: The Original Soundtrack from the Motion Picture
-Bad
+Bad,
 Sgt. Pepper's Lonely Hearts Club Band
 Dirty Dancing
 Let's Talk About Love
