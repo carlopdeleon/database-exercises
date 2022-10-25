@@ -32,38 +32,20 @@ Nevermind
 Supernatural */
 
 SELECT name FROM albums
-	WHERE sales < 20000000;
-/* 4e. Thriller
-Back in Black
-The Dark Side of the Moon
-Bat Out of Hell
-The Bodyguard
-Their Greatest Hits (1971–1975)
-Saturday Night Fever
-Rumours
-Grease: The Original Soundtrack from the Motion Picture
-Led Zeppelin IV
+	WHERE sales < 20;
+/* 4e.Grease: The Original Soundtrack from the Motion Picture
 Bad
-Jagged Little Pill
-Come On Over
-Falling into You
 Sgt. Pepper's Lonely Hearts Club Band
-Hotel California
 Dirty Dancing
-21
 Let's Talk About Love
-1
 Dangerous
 The Immaculate Collection
 Abbey Road
 Born in the U.S.A.
 Brothers in Arms
 Titanic: Music from the Motion Picture
-Metallica
 Nevermind
-The Wall
-Supernatural
-Appetite for Destruction */
+The Wall*/
 
 SELECT name from albums
 	WHERE genre = 'rock';
