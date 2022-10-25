@@ -14,12 +14,12 @@ WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya';
 SELECT emp_no, first_name, last_name
 FROM employees
 WHERE gender = 'M'
-AND first_name = 'Irena' OR 'Vidya' OR 'Maya';
-/* 4. 144 records returned. */
+AND first_name = 'Irena' OR last_name = 'Vidya' OR last_name ='Maya';
+/* 4. 319 records returned. */
 
 SELECT emp_no, last_name 
 FROM employees
-WHERE last_name LIKE '%';
+WHERE last_name LIKE 'E%';
 /* 5. 7330 employees last name start with an E. */
 
 SELECT emp_no, last_name
