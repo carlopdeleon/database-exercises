@@ -38,6 +38,7 @@ author	1
 reviewer	2
 commenter	1 */
 
+
 /* Employees Database */
 -- 1. 
 USE employees;
@@ -46,7 +47,9 @@ USE employees;
 SELECT departments.dept_name, employees.first_name, employees.last_name
 FROM departments
 JOIN dept_manager ON departments.dept_no = dept_manager.dept_no
-JOIN employees ON dept_manager.emp_no = employees.emp_no;
+JOIN employees ON dept_manager.emp_no = employees.emp_no
+WHERE dept_manager.to_date LIKE '9999%'
+ORDER BY departments.dept_name;
 
 -- 3. 
 SELECT departments.dept_name, employees.first_name, employees.last_name, employees.gender, dept_manager.to_date
@@ -54,7 +57,8 @@ FROM departments
 JOIN dept_manager ON departments.dept_no = dept_manager.dept_no
 JOIN employees ON dept_manager.emp_no = employees.emp_no
 WHERE employees.gender = 'F' 
-	AND dept_manager.to_date LIKE '9999%';
+	AND dept_manager.to_date LIKE '9999%'
+ORDER BY departments.dept_name;
 
 -- 4. 
 
@@ -129,6 +133,10 @@ JOIN dept_emp USING (dept_no)
 JOIN salaries ON dept_emp.emp_no = salaries.emp_no
 GROUP BY departments.dept_name
 ORDER BY ROUND(AVG(salaries.salary),0) DESC;
+
+
+-- 11Bonus
+
 
 
 
